@@ -9,6 +9,7 @@ H34026204_陳昭成
 
 Input :
 Input file: book.txt  , sellRecord.txt
+
 Content of book.txt:
 /* isbn|author|title|price|subject */
 439139597|J. K. Rowling|Harry Potter and the goblet of fire|25.95|CHILDREN

@@ -2,8 +2,53 @@
 DBMS Term Project Document
 H34026204_陳昭成 
 
+
+
 使用環境
 我使用java 完成DBMS Term Project，並使用Eclipse IDE 進行開發及程式執行。
+
+Input :
+Input file: book.txt  , sellRecord.txt
+Content of book.txt:
+/* isbn|author|title|price|subject */
+439139597|J. K. Rowling|Harry Potter and the goblet of fire|25.95|CHILDREN
+439064864|J. K. Rowling|Harry Potter and the chambers of secrets|17.95|CHILDREN
+439136350|J. K. Rowling|Harry Potter and the chamber of secrets|19.95|CHILDREN
+345350499|Marion Zimmer Bradley|The mists of avalon|12.95|FICTION
+395851580|James Marshall|George and Martha the complete stories of two best friends|25|CHILDREN
+375810609|Jean DE Brunhoff|Bonjour Babar|29.95|CHILDREN
+345337662|Anne Rice|Interview with a vampire|6.99|FICTION
+345377648|Anne Rice|Lasher|14|FICTION
+345313860|Anne Rice|The vampire lestat|6.99|FICTION
+042510107X|Tom Clancy|Red Storm Rising|7.99|FICTION
+034538475X|Anne Rice|The tale of the body thief|6.99|FICTION
+
+Content of sellRecord.txt:
+/* uid|no|isbn_no */
+1|1|439139597
+2|1|439136350
+3|1|439064864
+15|10|042510107X
+4|2|439139597
+5|2|439136350
+33|23|33
+44|55|555
+
+Input of command line in Eclipse:
+You can type in the SQL query below:
+SELECT * FROM books; 
+SELECT title,author FROM books;
+SELECT title,author FROM books WHERE author =‘J. K. Rowling’;
+SELECT title FROM books,sellRecord WHERE isbn = isbn_no AND author =‘J. K. Rowling’; 
+SELECT DISTINCT author FROM books;
+
+
+
+Output:
+SQL query result 
+
+
+
 
 使用說明
 執行後的結果: 可讓使用者直接輸入SQL query。

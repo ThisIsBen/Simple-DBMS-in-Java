@@ -20,7 +20,7 @@ import java.util.Vector;
 
 
 
-public class HashFunction {
+public class DBMSMain {
 	
 	//Modifiy the read in file path here 
 	public static String returnFileLoc(String fileName)
